@@ -239,12 +239,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/slack-hardware-digest-system/issues)
-- 📖 **Documentation**: [Wiki](https://github.com/YOUR_USERNAME/slack-hardware-digest-system/wiki)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/slack-hardware-digest-system/discussions)
+- 📧 **Issues**: [GitHub Issues](https://github.com/Akalbir17/slack-hardware-digest-system/issues)
+- 📖 **Documentation**: [Wiki](https://github.com/Akalbir17/slack-hardware-digest-system/wiki)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Akalbir17/slack-hardware-digest-system/discussions)
 
 ---
 
-**Built with ❤️ for Hardware GTM Teams**
+**Built with ❤️ for GTM Teams**
 
 *Accelerating hardware product launches through intelligent communication analysis* 
