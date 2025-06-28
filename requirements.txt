@@ -1,0 +1,34 @@
+# FastAPI and related dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Streamlit
+streamlit==1.28.2
+
+# AI and ML
+openai==1.51.0
+
+# Database
+asyncpg==0.29.0
+sqlalchemy==2.0.23
+
+# Redis
+redis==5.0.1
+
+# Data visualization
+plotly==5.17.0
+pandas==2.1.4
+
+# WebSockets
+websockets==12.0
+
+# Slack SDK
+slack-bolt==1.18.1
+
+# Utilities
+python-dotenv==1.0.0
+
+# Additional dependencies for the enhanced app
+requests==2.31.0
+httpx==0.25.2 
