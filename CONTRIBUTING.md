@@ -116,7 +116,7 @@ python -m pytest tests/test_agents.py
 
 ### Manual Testing
 1. Start the system: `docker-compose up -d`
-2. Access dashboard: http://localhost:3001
+2. Access dashboard: http://localhost:8501
 3. Test all major features
 4. Verify AI agents are working
 5. Check API endpoints

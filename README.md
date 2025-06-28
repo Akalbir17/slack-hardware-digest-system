@@ -86,7 +86,7 @@ curl http://localhost:8000/health
 ```
 
 ### 4. Access Applications
-- **🎯 Dashboard**: http://localhost:3001
+- **🎯 Dashboard**: http://localhost:8501
 - **🔧 API**: http://localhost:8000
 - **📚 API Docs**: http://localhost:8000/docs
 
@@ -160,7 +160,7 @@ docker-compose up -d postgres redis
 cd app && uvicorn main:app --reload --port 8000
 
 # Run Dashboard (Terminal 2) 
-cd dashboard && streamlit run main.py --server.port 3001
+cd dashboard && streamlit run main.py --server.port 8501
 ```
 
 ### Testing
