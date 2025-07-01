@@ -34,8 +34,13 @@ This comprehensive system processes, analyzes, and visualizes Slack communicatio
 
 ### 📹 Video Demo
 > **Note**: Currently using simulated hardware team data for demonstration
+<div align="center">
+  <a href="https://youtu.be/PTcM5NFN3Mk">
+    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="Hardware Digest System Demo" style="width:100%;max-width:600px;">
+  </a>
+  <p><em>▶️ Click to watch the complete system demo (5 minutes)</em></p>
+</div>
 
-https://youtu.be/PTcM5NFN3Mk
 
 *Watch the complete system walkthrough showing real-time message analysis, AI agent coordination, and automated digest generation.*
 
