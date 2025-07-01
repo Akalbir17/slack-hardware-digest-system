@@ -30,16 +30,53 @@ This comprehensive system processes, analyzes, and visualizes Slack communicatio
 - **Containerized Deployment**: Full Docker-compose orchestration
 - **Real-time Processing**: Continuous message analysis and alert generation
 
-## 🎬 Demo
+## 🎬 Demo & Screenshots
 
-### System Overview
+### 📹 Video Demo
+> **Note**: Currently using simulated hardware team data for demonstration
+
+https://github.com/user-attachments/assets/your-demo-video.mp4
+
+*Watch the complete system walkthrough showing real-time message analysis, AI agent coordination, and automated digest generation.*
+
+### 📊 Live Screenshots
+
+#### System Overview
 ![System Status](docs/screenshots/overview.png)
 
-### Multi-Agent Intelligence
+#### Multi-Agent Intelligence
 ![AI Agents](docs/screenshots/agents.png)
 
-### Daily Digest
+#### Daily Digest
 ![Daily Digest](docs/screenshots/digest.png)
+
+### 🎭 Mock Data Simulation
+
+**For demonstration purposes, this system uses an advanced mock data generator that creates realistic hardware team communications.**
+
+The [`mock_data/generator.py`](mock_data/generator.py) creates authentic-looking Slack messages including:
+
+- **🔧 Component Shortages**: "🚨 CRITICAL: Snapdragon 8 Gen 3 shortage at Foxconn. Current inventory: 250 units, need 1,200 for EVT"
+- **📊 Quality Issues**: "📉 Quality alert: AMOLED 6.1\" Samsung E7 yield rate dropped to 89.2% (target: 94.5%)"  
+- **📅 Timeline Updates**: "📅 DVT milestone update for Phoenix: delayed - additional testing required"
+- **🌏 Supply Chain Alerts**: "🚢 Logistics update: 7 day delay on Li-ion 4500mAh shipment from Shenzhen"
+- **🧪 Testing Results**: "🧪 Reliability testing: IMU BMI088 completed 3,500 cycles, 2 failures"
+
+**Features of Mock Generator:**
+- 15+ realistic hardware team personas
+- 50+ actual component specifications (displays, chipsets, batteries, sensors)
+- 14+ real manufacturing vendors (Foxconn, Pegatron, Inventec, etc.)
+- Project codenames and milestone tracking (EVT, DVT, PVT, MP)
+- Authentic urgency levels and team communication patterns
+
+**Pre-loaded Crisis Day Scenario:**
+The system includes [`crisis_day_messages.json`](crisis_day_messages.json) - a curated dataset simulating a challenging day in hardware development with multiple concurrent issues:
+- Critical component shortages affecting production schedules
+- Quality issues discovered in testing phases  
+- Supply chain disruptions from geopolitical events
+- Timeline adjustments across multiple product lines
+
+This allows you to see the full system capabilities including crisis management and multi-risk coordination without needing actual Slack integration during evaluation.
 
 ## 🚀 Quick Start
 
@@ -90,6 +127,8 @@ curl http://localhost:8000/health
 - **🔧 API**: http://localhost:8000
 - **📚 API Docs**: http://localhost:8000/docs
 
+> **✨ Ready to Explore!** The system comes pre-loaded with 169 simulated hardware team messages and 65 AI-generated risk assessments, so you can immediately see all features in action without needing real Slack data.
+
 ## 🏗️ Architecture
 
 ```mermaid
@@ -134,7 +173,9 @@ slack-hardware-digest-system/
 ├── ⚙️ scripts/             # Utility Scripts
 │   ├── start-dev.sh       # Development startup
 │   └── start-dev.bat      # Windows development startup
-└── 📋 requirements.txt     # Python dependencies
+├── 📋 requirements.txt     # Python dependencies
+├── 🔗 SLACK_INTEGRATION.md # Complete Slack setup guide
+└── 📖 README.md           # Main documentation
 ```
 
 ## 🔧 Configuration Guide
@@ -144,10 +185,74 @@ slack-hardware-digest-system/
 2. Add to `.env`: `OPENAI_API_KEY=sk-proj-your-key-here`
 3. System automatically validates and enables AI features
 
-### Slack Integration (Optional)
-1. Create a Slack app in your workspace
-2. Enable bot scopes: `channels:read`, `channels:history`, `chat:write`
+### 🔗 Slack Integration
+
+**Connect to your hardware team's Slack workspace for real-time intelligence.**
+
+For complete setup instructions, see our detailed **[Slack Integration Guide](SLACK_INTEGRATION.md)**.
+
+#### Quick Setup Summary:
+1. Create Slack app with hardware bot permissions
+2. Configure event subscriptions for message monitoring  
 3. Install app and copy tokens to `.env`
+4. Invite bot to your hardware team channels
+5. Test with sample messages and verify dashboard updates
+
+#### What You Get:
+- 📡 **Real-time monitoring** of hardware team discussions
+- 🤖 **AI analysis** of supply chain, quality, and timeline risks
+- 📊 **Daily digest posts** with team activity summaries
+- ⚠️ **Instant alerts** for critical issues requiring attention
+
+## 🔄 How It Works in Practice
+
+### Real-Time Message Processing
+1. **Message Ingestion**: Bot monitors your configured Slack channels 24/7
+2. **AI Classification**: Each message is analyzed by specialized AI agents:
+   - Supply chain mentions (delays, shortages, vendor issues)
+   - Quality concerns (defects, yields, testing failures) 
+   - Timeline discussions (deadlines, dependencies, blockers)
+   - Risk indicators (urgent, critical, blocked, delayed)
+
+3. **Smart Aggregation**: Related messages are grouped and analyzed together
+4. **Risk Scoring**: Dynamic risk assessment based on message content, urgency, and patterns
+5. **Automated Reporting**: Daily digest generation and critical alert notifications
+
+### Practical Use Cases
+
+#### 🚨 Early Warning System
+- **Supplier Risk**: "Chip shortage may delay Q3 delivery" → Immediate supply chain alert
+- **Quality Issues**: "Yield dropped to 78% overnight" → Quality team notification
+- **Timeline Slips**: "Testing phase needs extra 2 weeks" → Schedule impact analysis
+
+#### 📈 Trend Analysis
+- Track recurring supplier issues over time
+- Monitor quality metrics and improvement trends
+- Identify bottlenecks in your GTM process
+
+#### 🤖 Intelligent Summaries
+- **Daily Digest**: Comprehensive overview of all hardware team activity
+- **Weekly Trends**: Pattern analysis and risk trajectory
+- **Monthly Reports**: Strategic insights for leadership
+
+### Sample Analysis Output
+```json
+{
+  "message_analysis": {
+    "original": "Components from AcmeCorp delayed again, 3rd time this month",
+    "category": "supply_chain_risk",
+    "risk_level": "high",
+    "entities": ["AcmeCorp", "components", "delay"],
+    "sentiment": "negative",
+    "urgency": "medium",
+    "ai_insights": [
+      "Recurring supplier reliability issue",
+      "Pattern suggests vendor relationship review needed",
+      "Recommend backup supplier evaluation"
+    ]
+  }
+}
+```
 
 ## 🧪 Development
 
