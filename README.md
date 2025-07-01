@@ -35,20 +35,9 @@ This comprehensive system processes, analyzes, and visualizes Slack communicatio
 ### 📹 Video Demo
 > **Note**: Currently using simulated hardware team data for demonstration
 
-https://github.com/user-attachments/assets/Screen%20Recording%202025-06-30%20195749.mp4
+https://youtu.be/PTcM5NFN3Mk
 
 *Watch the complete system walkthrough showing real-time message analysis, AI agent coordination, and automated digest generation.*
-
-### 📊 Live Screenshots
-
-#### System Overview
-![System Status](docs/screenshots/overview.png)
-
-#### Multi-Agent Intelligence
-![AI Agents](docs/screenshots/agents.png)
-
-#### Daily Digest
-![Daily Digest](docs/screenshots/digest.png)
 
 ### 🎭 Mock Data Simulation
 
